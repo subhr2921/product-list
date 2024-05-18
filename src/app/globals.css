@@ -18,16 +18,30 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.blank-card {
+  background-color: black;
+  border: 2px solid #fff;
+  color: white;
+  height: 214px;
+  width: 214px;
+}
+
+.active {
+  background-color: silver;
+}
+
+.image {
+  max-height: 150px;
+  max-width: 100%;
 }
